@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>parallax</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="img-container">
+    <div id="scene">
+        <div data-depth="0.18">
+            <img src="img layers/7.jpg" alt="">
+        </div>
+        <div data-depth="0.15">
+            <img src="img layers/6.png" alt="">
+        </div>
+        <div data-depth="0.12">
+            <img src="img layers/5.png" alt="">
+        </div>
+        <div data-depth="0.09">
+            <img src="img layers/4.png" alt="">
+        </div>
+        <div data-depth="0.06">
+            <img src="img layers/3.png" alt="">
+        </div>
+        <div data-depth="0.03">
+            <img src="img layers/2.png" alt="">
+        </div>
+        <div data-depth="0.01">
+            <img src="img layers/2.png" alt="">
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script>
+    let scene = document.getElementById('scene');
+    let parallaxInstance = new Parallax(scene);
+</script>
+</body>
+</html>
