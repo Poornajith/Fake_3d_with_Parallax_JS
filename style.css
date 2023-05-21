@@ -1,11 +1,34 @@
 .img-container{
     position: relative;
+    display: flex;
     overflow: hidden;
     height: 95vh;
     left: 0;
     top:0;
 }
-img{
-    height: 95vh;
-    width:auto;
+.top_img{
+    opacity: 0.7;
 }
+.img_d{
+    height: 832px;
+    width:640px;
+}
+.sprite-img-1{
+    background-image: url("img layers/spritesheet1.png");
+}
+.sprite-img-2{
+    background-image: url("img layers/spritesheet.png");
+}
+.sprite-anim{
+    background-position: 0 0;
+    animation: play_s steps(56) 5.6s infinite;
+}
+@keyframes play_s {
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: -5600% 0;
+    }
+}
+
